@@ -1,4 +1,4 @@
-//I refered to afew class exercises from 14.3
+//I refered to a few class exercises 14.3, in particular 17-CatsApp
 
 // DEPENDENCIES
 
