@@ -29,32 +29,32 @@ $(function() {
       name: $("#ca").val().trim(),
       devoured: 1
     };
-
+console.log($("#ca").val().trim());
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger
     }).then(
       function() {
-        console.log("created new cat");
+        // console.log("created new cat");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 
-//   $(".delete-burgers").on("click", function(event) {
-//     var id = $(this).data("id");
+  $(".delete-burgers").on("click", function(event) {
+    var id = $(this).data("id");
 
-//     // Send the DELETE request.
-//     $.ajax("/api/burgers/" + id, {
-//       type: "DELETE"
-//     }).then(
-//       function() {
-//         console.log("deleted burgers", id);
-//         // Reload the page to get the updated list
-//         location.reload();
-//       }
-//     );
-//   });
-// });
+    // Send the DELETE request.
+    $.ajax("/api/burgers/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        console.log("deleted burgers", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+});
