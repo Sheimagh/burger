@@ -1,19 +1,24 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+  min-height: 100vh;
+  background-image: url("/assets/img/burger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-.label {
-  font-weight: bold;
+.container {
+  height: 200px;
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: rgb(54,189,162);
-}
-
-.form-group {
-  margin-bottom: 5px;
+.h1, form {
+  height: 200px;
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
